@@ -5,3 +5,5 @@ This repository is intended to provide a list of possible solutions to every exe
 
 Order PLEASE: for every exercise you should consider ADDING your solution ONLY IF it is significantly different from existing ones.
 ...
+
+You should also read the following introduction: https://guides.github.com/activities/hello-world/
