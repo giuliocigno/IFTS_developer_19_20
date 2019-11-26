@@ -46,30 +46,30 @@ public class Programma {
 		public static void esercizio6() 
 		{
 			System.out.println("Confronta il sesto numero con i primi cinque");
-			Integer [] numbers = new Integer [5];
+			Integer[] numbers = new Integer [5];
 			for (int i=0;i<5;i++) 
 				{
-					numbers[i]=metodoInput("Inserire i primi cinque numeri");
+					numbers[i] = metodoInput("Inserire i primi cinque numeri");
 				
 				}
 			System.out.println("I numeri inseriti sono:");
 			for (Integer i : numbers) 
 				{
-				  System.out.print(i+"; ");
+				  System.out.print( i + "; ");
 				}
 			
 			System.out.println();
 			
 			Integer numeroConfronto=metodoInput("Iserire il numero da confrontare:");
 			//Converto i numeri in stringhe
-			String inputConfronto=Integer.toString(numeroConfronto);
+			String inputConfronto= Integer.toString(numeroConfronto);
 			String[] numbersString = new String [5];
 			
 			for (int i=0;i<numbers.length;i++) 
 				{
 					numbersString[i]=Integer.toString(numbers[i]);
 				}
-			// metodo che conta,e stampa, i numeri cui la prima cifra è uguale a il numero di confronto
+			// metodo che conta,e stampa, i numeri cui la prima cifra Ã¨ uguale a il numero di confronto
 			int contatore=0;
 			for (int i=0;i<numbersString.length;i++) {
 					
@@ -82,7 +82,7 @@ public class Programma {
 				}
 			if(contatore==1) 
 				{
-					System.out.println("C'è un numero che corrisponde.");
+					System.out.println("C'Ã¨ un numero che corrisponde.");
 				}
 			else if(contatore>1)
 				{
@@ -99,37 +99,36 @@ public class Programma {
 			int input=0;
 			System.out.println("Rettangolo di asterischi");
 			System.out.println();
-			int base=metodoInput("Qual è la base?");
+			int base=metodoInput("Qual Ã¨ la base?");
 			System.out.println();
-			int altezza=metodoInput("Qual è l'altezza?");
+			int altezza=metodoInput("Qual Ã¨ l'altezza?");
 			System.out.println();
 			
+			/*
+			Per ogni riga di "altezza"
+				se la riga Ã¨ prima o ultima: stampa solo asterischi
+				altrimenti: stampa solo il primo e l'ultimo asterisco...
+			*/
+			for( int i=0; i < altezza; i++){
 			
-			if(altezza<3)
-				{
-					System.out.print("*");
-				}
-			else 
-				{
-					for (int i=0;i<base;i++) 
-						{
-							System.out.print("*");
-						}
-				}
-			for (int n=0;n<altezza-2;n++) 
-				{
-					System.out.print("*");
-						
-					for (int k=0;k<base-2;k++) 
-						{
-							System.out.print("0");
-						}
-					System.out.print("*");
-				}
-			for (int n=0;n<base;n++) 
-			{
-				System.out.print("*");
+				if( i == 0 || i == altezza-1 ){
 					
+					for( int j=0; j < base; j++ ){
+				
+						System.out.print("*");
+					}
+				}else{
+				
+					for( int j=0; j < base; j++ ){
+				
+						if( j == 0 || j == base-1 ){
+						
+							System.out.print("*");	
+						}else{
+							System.out.print(" ");
+						}
+					}
+				}
 			}
 		}
 	}
