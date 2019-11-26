@@ -82,7 +82,7 @@ public class Programma {
 				}
 			if(contatore==1) 
 				{
-					System.out.println("C'è un"+ contatore +" numero che corrisponde.");
+					System.out.println("C'è un numero che corrisponde.");
 				}
 			else if(contatore>1)
 				{
