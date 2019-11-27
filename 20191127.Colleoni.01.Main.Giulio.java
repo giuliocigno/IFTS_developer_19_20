@@ -8,7 +8,7 @@ public class Programma {
     
     for( int i=0; i < strumenti.size(); i++ ){
     
-      element = /*accede allo i-esimo elemento di strumenti*/; 
+      element = strumenti.get(i); 
       
       List<char> wordnew = new ArrayList<>();  
       
