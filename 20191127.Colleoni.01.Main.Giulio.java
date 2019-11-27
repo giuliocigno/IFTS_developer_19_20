@@ -6,8 +6,10 @@ public class Programma {
   
     List<String> strumenti = new ArrayList<>( Arrays.asList("cello","guitar","violin","double bass"));
     
-    for( int i=0; i < strumenti.lenght; i++ ){
+    for( int i=0; i < strumenti.size(); i++ ){
     
+      element = /*accede allo i-esimo elemento di strumenti*/; 
+      
       List<char> wordnew = new ArrayList<>();  
       
       for( int i=0; i < element.lenght; i++ ){
