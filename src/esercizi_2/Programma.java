@@ -129,6 +129,8 @@ public class Programma {
 						}
 					}
 				}
+				
+				System.out.println(); 
 			}
 		}
 	}
