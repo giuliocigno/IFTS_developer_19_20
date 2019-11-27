@@ -111,25 +111,16 @@ public class Programma {
 			*/
 			for( int i=0; i < altezza; i++){
 			
-				if( i == 0 || i == altezza-1 ){
-					
-					for( int j=0; j < base; j++ ){
+				for( int j=0; j < base; j++ ){
 				
-						System.out.print("*");
-					}
-				}else{
-				
-					for( int j=0; j < base; j++ ){
-				
-						if( j == 0 || j == base-1 ){
+					if( j == 0 || j == base-1 || i == 0 || i == altezza-1 ){
 						
-							System.out.print("*");	
-						}else{
-							System.out.print(" ");
-						}
+						System.out.print("*");	
+					}else{
+						System.out.print(" ");
 					}
 				}
-				
+								
 				System.out.println(); 
 			}
 		}
