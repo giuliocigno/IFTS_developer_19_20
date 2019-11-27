@@ -11,10 +11,10 @@ You should also read the following introduction: https://guides.github.com/activ
 
 FILE NAME CONVENTION
 
-  data_consegna_ESERCIZIO.Professore.numero_esercizio.NOME_CLASSE
+  data_consegna_ESERCIZIO.Professore.numero_esercizio.NOME_CLASSE[.TUO_NOME]
   
   nel seguente formato di esempio: 
   
-  20191101.Colleoni.1.Lampadina[.java]
+  20191101.Colleoni.1.Lampadina[.RossiMario][.java]
 
 
