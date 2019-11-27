@@ -11,7 +11,7 @@ You should also read the following introduction: https://guides.github.com/activ
 
 FILE NAME CONVENTION
 
-  DATA_CONSEGNA_ESERCIZIO.PROFESSORE.NUMERO_ESERCIZIO.NOME_CLASSE
+  data_consegna_ESERCIZIO.Professore.numero_esercizio.NOME_CLASSE
   
   nel seguente formato di esempio: 
   
