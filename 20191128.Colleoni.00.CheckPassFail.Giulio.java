@@ -1,3 +1,5 @@
+//sample code, not tested...
+
 public class CheckPassFail {
 
   public static void main( String[] args){
