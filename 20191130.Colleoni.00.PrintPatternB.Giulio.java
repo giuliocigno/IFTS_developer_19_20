@@ -1,6 +1,8 @@
 //tested!!!
 
-//Pattern B) dell'esercizio PrintPattern del file Esercizi_00.pdf
+// Stampa il pattern B) 
+// dell'esercizio PrintPattern nella sezione "Nested loops" 
+// del file Esercizi_00.pdf
 
 public class Programma {
 
