@@ -1,0 +1,62 @@
+
+
+INTRODUZIONE
+
+Questo documento vuole essere la prima definizione del progetto “social” proposto in classe.
+Seguirà quindi una breve descrizione del progetto nelle sue principali componenti. 
+    
+
+
+DATABASE 
+
+Il requisito fondamentale per la realizzazione del progetto constà nell’acquisizione di una opportuna quantità di contenuti (e relative informazioni) da una nota piattaforma social: Twitter, instagram etc. 
+
+In ogni caso, le informazioni richieste saranno disponibili in formato JSON. Perciò, sarà necessario elaborare questi file correttamente per accedere ai soli contenuti utili al nostro scopo.  
+
+Le informazioni ottenute costituiranno la PRIMA e fondamentale base dati del nostro progetto. 
+
+In seguito, arricchiremo la prima a formare una SECONDA base dati per la realizzazione del programma “chatbot”.  L’obiettivo è stabilire la seguente relazioni per ogni coppia contenuto-feedback:
+
+(  TWEET,  FEEDBACK )  ---->  { ( TAG_1, freq_assoluta) , … ( TAG_N, freq_assoluta) }       
+
+La frequenza assoluta per ogni TAG è ottenuta contando le associazioni effettuate preventivamente da un insieme di individui. Ciò dovrebbe permettere di avere una lettura collettiva di ciascuna coppia contenuto-feedback. In teoria, un contenuto dovrebbe essere tanto più “interessante” quanto alcuni dei suoi tag risultano più “forti” degli altri. Ovvero,
+quando la loro frequenza assoluta è superiore alla media.  
+
+I cosiddetti “tag” potrebbero essere di due generi principali:
+ 
+insieme di colori: giallo, rosso, blu, bianco, nero…
+insieme di “keywords”: { “bello”, “brutto”, “gioia”, “neutro” … } 
+
+L’ insieme dei “feedback” potrebbe essere costituito da alcuni caratteri “emoji”: 😃. 
+
+
+
+CHAT BOT 
+
+Con ogni probabilità il programma “chatbot” si appoggerà alla piattaforma Slack. 
+
+Il nucleo del suo funzionamento è descritto dal seguente schema: 
+
+(  TWEET,  FEEDBACK )  ---- ALGORITMO ----> NEXT_TWEET
+
+Ogni algoritmo dovrebbe prendere in considerazione l’insieme delle coppie tag-frequenza 
+in relazione con la coppia contenuto-feedback precedente. Ad esempio: 
+
+        
+      TWEET PRECEDENTE                                              PROSSIMO TWEET
+        \\\\\\\\\\\\\\                                             //////////////
+{ giallo: 5, rosso: 0, blu: 5 }     ---- ALGORITMO --->     { giallo: 0, rosso: 10, blu: 0 }
+
+    
+
+
+WEB
+
+La parte web dovrebbe raccogliere alcune statistiche dedotte dai dati a nostra disposizione 
+utilizzando i  metodi della statistica descrittiva…
+
+
+
+ALTRO??? 
+
+Fatemi sapere cosa ne pensate!!!
